@@ -25,5 +25,5 @@ jobs:
         run: pytest
     
       - name: Run linting
-        run: ruff check .y
+        run: ruff check .
 
