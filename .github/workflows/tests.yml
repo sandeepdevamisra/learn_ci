@@ -23,6 +23,7 @@ jobs:
 
       - name: Run tests
         run: pytest
+
   lint:
     runs-on: ubuntu-latest
 
@@ -40,5 +41,5 @@ jobs:
 
       - name: Run linting
         run: ruff check . 
-  
+
 
