@@ -32,7 +32,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-	  name: ci-build
+          name: ci-build 
           path: build/
 
   lint:
