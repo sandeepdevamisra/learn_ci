@@ -23,6 +23,17 @@ jobs:
 
       - name: Run tests
         run: pytest
+      
+      - name: Create build artifact
+        run: |
+          mkdir -p build
+          echo "CI build successful" > build/status.txt
+      
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+	  name: ci-build
+          path: build/
 
   lint:
     runs-on: ubuntu-latest
